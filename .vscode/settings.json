@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "counterparty",
+        "iban",
+        "idempotency",
+        "ISIN",
+        "openapi",
+        "settlementinstructions",
+        "standardsettlementinstructions"
+    ],
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "editor.formatOnSave": true
+}
