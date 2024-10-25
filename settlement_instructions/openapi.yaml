@@ -411,10 +411,8 @@ components:
                     description: Unique identifier of the standard settlement instruction. Set by the custodian
                 market:
                     type: string
-                    example: >
-                        SWEDEN
-                        or
-                        EUROCLEAR
+                    description: Market can be for example SWEDEN, BELGIUM or EUROCLEAR etc
+                    example: EUROCLEAR
                 agentBusinessIdentifierCode:
                     description: Business Identifier Code of the agent
                     $ref: "#/components/schemas/BIC"
