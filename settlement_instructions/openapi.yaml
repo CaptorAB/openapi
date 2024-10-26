@@ -1,4 +1,3 @@
----
 openapi: 3.1.1
 info:
     title: Settlement Instructions API
@@ -42,6 +41,7 @@ paths:
                     content:
                         application/json:
                             schema:
+                                type: array
                                 items:
                                     "$ref": "#/components/schemas/Client"
                 "400":
@@ -97,6 +97,7 @@ paths:
                     content:
                         application/json:
                             schema:
+                                type: array
                                 items:
                                     "$ref": "#/components/schemas/SettlementInstruction"
                 "400":
@@ -119,7 +120,9 @@ paths:
                     content:
                         application/json:
                             schema:
-                                "$ref": "#/components/schemas/SettlementInstruction"
+                                type: array
+                                items:
+                                    "$ref": "#/components/schemas/SettlementInstruction"
                 "400":
                     description: Bad request
                 "401":
@@ -254,9 +257,9 @@ components:
                     type: string
                 standardSettlementInstructions:
                     description: Settlement instructions for this client
-                    schema:
-                        items:
-                            "$ref": "#/components/schemas/StandardSettlementInstruction"
+                    type: array
+                    items:
+                        "$ref": "#/components/schemas/StandardSettlementInstruction"
         SettlementInstruction:
             type: object
             required:
